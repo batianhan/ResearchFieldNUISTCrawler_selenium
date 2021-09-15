@@ -167,8 +167,6 @@ def download(chrome, urls, dst_file):
         except:
             log_console('文件移动转换错误... 重新下载...\n')
 
-r'E:\BTH\ResearchFieldNUISTCrawler^(selenium^)\Application\chrome.exe --headless --disable-gpu --print-to-pdf=E:\BTH\ResearchFieldNUISTCrawler^(selenium^)\test.pdf E:\BTH\ResearchFieldNUISTCrawler^(selenium^)\2021.7\HCP\2-A SECURE AND DYNAMIC MULTI-KEYWORD RANKED SEARCH SCHEME OVER ENCRYPTED CLOUD DATA.html'
-
 # 用chrome.exe将本地html转pdf
 # src_file, dst_file 须为绝对路径
 def html2pdf(chrome_path, src_file, dst_file):
