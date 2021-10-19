@@ -148,7 +148,7 @@ def getUrl2O(name):
 def download(chrome, urls, dst_file):
     while True:
         try:
-            log_console('访问此链接下载:{}'.format(urls))
+            log_console('\n访问此链接下载:{}'.format(urls))
             clean_fold(temp_files)
             chrome.get(urls)
         except Exception:
@@ -187,7 +187,7 @@ first_enter = True
 def save_pdf(chrome, urls, dst_path, title):
     while True:
         try:
-            log_console('访问此链接下载html:{}'.format(urls))
+            log_console('\n访问此链接下载html:{}'.format(urls))
             chrome.get(urls)
 
             # 如果是第一次打开 web of science 链接 网页些不必要的提示信息
@@ -282,9 +282,6 @@ if __name__ == "__main__":
     #     for file in os.listdir('{}{}'.format(data_root, path_1st)):
     #         if(file.split('.')[-1] == 'html'):
     #             html2pdf(chrome_path, '{}{}/{}'.format(data_root, path_1st, file), '{}{}/{}'.format(data_root, path_1st, file.replace('.html', '.pdf')))
-
-
-
 
 
 
